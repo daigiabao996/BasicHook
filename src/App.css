@@ -1,38 +1,51 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+.container {
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+}
+.introduce {
+  padding: 20px 0px;
   text-align: center;
+  font-size: 50px;
+  font-weight: 700;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.introduce_name {
+  color: blue;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.open_paragraph {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 0px
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form {
+  text-align: center;
+  margin: 30px 0px;
+  height: 60px;
 }
-
-.App-link {
-  color: #61dafb;
+form input {
+  padding: 10px;
+  font-size: 1.1rem;
+  height: 100%;
+  width: 50%;
+  outline: none;
+  border: none;
+  background-color: rgb(209, 209, 209);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form button {
+  padding: 10px;
+  height: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border: none;
+  background: black;
+  color: orange;
+}
+form button:hover {
+  background-color: rgba(0, 0, 0, 0.712);
 }
